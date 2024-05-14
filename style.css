@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+    outline: none;
+    font-family: 'Bitter', serif;
+}
+body{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fae0fa;
+}
+ h1 {
+    text-align: center;
+    margin: 10px auto 20px;
+    font-size: 35px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 500px;
+    gap: 10px;
+}
+.form > *{
+    margin: 6px 0;
+}
+.form input{
+    outline: none;
+    width: 100%;
+    padding: 10px 5px;
+    font-size: 16px;
+    border: 2px solid #21212142;
+    background-color: #f7f7f7;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    appearance: none;
+}
+
+.form .btns{
+    align-self:center;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.form button{
+    padding: 8px 24px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #bd05bd;
+    border: 2px solid #21212142;
+    cursor: pointer;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.hidden-btn {
+    display: none;
+}
+
+.form button:hover{
+    opacity: 0.7;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.table{
+    max-width: 100%;
+    overflow-x: auto;
+}
+td{
+    border: 2px solid #21212142;
+    min-width: 100px;
+    max-width: 100px;
+    padding: 8px 4px;
+    font-size: 18px;
+}

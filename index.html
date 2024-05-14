@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel Sheet Generator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script type="text/javascript" src="https://unpkg.com/xlsx@0.15.1/dist/xlsx.full.min.js"></script>
+<script defer src="./script.js"></script>
+</head>
+<body>
+    <h1>Excel Sheet Generator</h1>
+    <div class="form">
+        <input type="number" class="rows" placeholder="Enter number of rows" autofocus>
+        <input type="number" class="columns" placeholder="Enter number of columns">
+        <div class="btns">
+            <button class="generate-btn" >Generate</button>
+            <button class="new-sheet-btn hidden-btn" onclick="newSheet()">New Sheet</button>
+            <button class="export-btn" onclick="ExportToExcel('xlsx')">Export</button>
+        </div>
+    </div>
+    <div class="table">
+        <table cellspacing="6px">
+            <tbody class="sheet-body"></tbody>
+        </table>
+    </div>
+</body>
+
+</html>
